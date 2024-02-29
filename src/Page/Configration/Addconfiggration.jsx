@@ -18,10 +18,8 @@ function AddConfigration() {
             "configId": addconfig
         }
         dispatch(createconfig(data));
-        if (status === "succeeded") {
-            setconfig("")
-            history("/Configration")
-        }
+        setconfig("")
+        history("/Configration")
     };
     return (
         <div className="col-xl-10 bg mainContainer">

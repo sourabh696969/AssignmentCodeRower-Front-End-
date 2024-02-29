@@ -14,10 +14,6 @@ function Configration() {
   //  add
   const [addconfig, setconfig] = useState('');
 
-  useEffect(() => {
-    dispatch(getconfig({ addconfig: "sourabh", }));
-  }, [dispatch]);
-
   const handleClick = async (e) => {
     e.preventDefault();
     dispatch(getconfig({ addconfig }));;
